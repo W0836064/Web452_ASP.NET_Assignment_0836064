@@ -1,0 +1,88 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<!-- Include Google Fonts link for Pixelify Sans -->
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Playfair+Display">
+
+
+<!-- Inline CSS styles -->
+<style>
+    /* Define the font family for the entire page */
+    body {
+        font-family: 'Playfair Display', serif; /* Use 'serif' as the fallback font family */
+    }
+
+    /* Style the heading elements */
+    h1, h2 {
+        color: red; /* Text color */
+        text-align: center;
+    }
+
+    /* Style the paragraphs */
+    p {
+        line-height: 1.6; /* Line height for better readability */
+    }
+
+    /* Style the address block */
+    address {
+        font-style: normal; /* Address should not be italic */
+    }
+
+    /* Style the list of team members */
+    ul {
+        list-style-type: disc; /* Use bullets for list items */
+    }
+
+    /* Define the background color for the entire page */
+    body {
+        background-color: #f0f0f0; /* Light gray background color */
+    }
+
+    .Stick-image {
+        max-width: 100%; /* Ensure images don't exceed their container's width */
+        display: block; /* Remove default inline styles on images */
+        margin: 0 auto; /* Center images horizontally within their container */
+        border: 1px solid #ccc; /* Add a border around images */
+        padding: 10px; /* Add some spacing around images */
+        /* Styles for the Sticks/Index page */
+        /* Define specific styles for elements on this page */
+        /* Style the table header */
+
+
+    {
+        background-color: #333; /* Dark background color for table headers */
+        color: white; /* Text color for table headers */
+        text-align: center; /* Center-align table header text */
+    }
+
+    /* Style the table rows */
+    .table tbody tr:nth-child(even) {
+        background-color: #f2f2f2; /* Alternate background color for even rows */
+    }
+
+    /* Style the links for Edit, Details, and Delete actions */
+    a {
+        color: #007bff; /* Link color */
+        text-decoration: none; /* Remove underline from links */
+        margin-right: 10px; /* Add spacing between links */
+    }
+
+        a:hover {
+            text-decoration: underline; /* Underline links on hover */
+        }
+</style>
+<body>
+    <h2>Sticks</h2>
+
+    <p>Discover a World of Sticks: Welcome to My Stick List</p>
+
+    <a class="nav-link" asp-area="" asp-controller="Sticks" asp-action="Index">Sticks Table</a>
+    <div class=" Sticks">
+        <img class="Stick-image" src="~/img/Stick1.jpg" />
+        <img class="Stick-image" src="~/img/Stick2.jpg" />
+        <img class="Stick-image" src="~/img/Stick3.png" />
+        <img class="Stick-image" src="~/img/Stick4.jpg" />
+    </div>
+</body>
